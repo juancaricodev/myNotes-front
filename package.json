@@ -1,0 +1,17 @@
+{
+  "name": "mynotes-front",
+  "version": "1.0.0",
+  "description": "myNotes Front End",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "start"
+  },
+  "keywords": [
+    "React",
+    "React Router",
+    "JavaScript",
+    "Front End"
+  ],
+  "author": "Juan Camilo Rico <juancaricodev@gmail.com>",
+  "license": "MIT"
+}
