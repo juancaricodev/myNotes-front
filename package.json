@@ -13,5 +13,9 @@
     "Front End"
   ],
   "author": "Juan Camilo Rico <juancaricodev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
 }
