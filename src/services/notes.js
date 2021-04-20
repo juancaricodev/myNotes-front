@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const URL = 'http://localhost:5000/notes'
+const URL = process.env.API
 
 const getAll = () => {
   const request = axios.get(URL)
