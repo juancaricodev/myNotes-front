@@ -81,12 +81,9 @@ const Notes = () => {
     <>
       <div className='part-tag'>
         <h2>Notes</h2>
-        <h3>Example section 2.b</h3>
       </div>
 
       <div className='notes'>
-        <h2>Notes</h2>
-
         <button type='button' onClick={() => setShowAll(!showAll)}>
           Show {showAll ? 'important' : 'all'}
         </button>
