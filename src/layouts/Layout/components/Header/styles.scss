@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 21px;
+  height: $header-height;
+  background-color: $color-black;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $color-white;
+      font-weight: 400;
+    }
+  }
+}
