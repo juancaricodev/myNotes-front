@@ -1,0 +1,51 @@
+.notes {
+  h2 {
+    margin: 20px 0;
+  }
+
+  & > button {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      height: 50px;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+
+      .note-important {
+        width: 12px;
+        height: 12px;
+        color: $color-white;
+        border-radius: 50%;
+        background-color: $color-green
+      }
+
+      button {
+        display: none;
+        @include btn($color-black, $color-black, $color-white);
+      }
+
+      &:hover {
+        background-color: $color-grey-1;
+
+        button {
+          display: block;
+        }
+      }
+    }
+  }
+
+  form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
