@@ -12,7 +12,9 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       '@containers': path.resolve(__dirname, 'src/containers'),
-      '@routes': path.resolve(__dirname, 'src/routes')
+      '@layouts': path.resolve(__dirname, 'src/layouts'),
+      '@routes': path.resolve(__dirname, 'src/routes'),
+      '@services': path.resolve(__dirname, 'src/services')
     }
   },
   module: {

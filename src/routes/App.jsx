@@ -8,14 +8,17 @@ import {
 
 import Home from '@containers/Home'
 import Notes from '@containers/Notes'
+import Layout from '@layouts/Layout'
 
 const App = () => {
   return (
     <Router>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/notes' component={Notes} />
-      </Switch>
+      <Layout>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/notes' component={Notes} />
+        </Switch>
+      </Layout>
     </Router>
   )
 }

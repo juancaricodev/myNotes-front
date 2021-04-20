@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import noteService from '@services/notes'
-// import './styles.scss'
+import './styles.scss'
 
 const Notes = () => {
   const [notes, setNotes] = useState([])
