@@ -28,11 +28,11 @@ const Notes = () => {
     e.preventDefault()
 
     const noteObject = {
-      id: notes.length + 1,
+      // id: notes.length + 1,
       content: newNote,
-      date: new Date().toISOString(),
-      important: Math.random() < 0.5,
-      deleted: false
+      // date: new Date().toISOString(),
+      important: Math.random() < 0.5
+      // deleted: false
     }
 
     if (newNote !== '') {
@@ -90,7 +90,7 @@ const Notes = () => {
 
         <ul>
           {notesToShow.map(note => (
-            note.deleted === false && (
+            (
               <li key={note.id}>
                 {note.important ? <span className='note-important' /> : null}
 
