@@ -28,11 +28,8 @@ const Notes = () => {
     e.preventDefault()
 
     const noteObject = {
-      // id: notes.length + 1,
       content: newNote,
-      // date: new Date().toISOString(),
       important: Math.random() < 0.5
-      // deleted: false
     }
 
     if (newNote !== '') {
@@ -90,19 +87,17 @@ const Notes = () => {
 
         <ul>
           {notesToShow.map(note => (
-            (
-              <li key={note.id}>
-                {note.important ? <span className='note-important' /> : null}
+            <li key={note.id}>
+              {note.important ? <span className='note-important' /> : null}
 
-                <p>{note.content}</p>
+              <p>{note.content}</p>
 
-                <button type='button' onClick={() => handleImportance(note.id)}>
-                  {note.important ? 'Not important' : 'Make important'}
-                </button>
+              <button type='button' onClick={() => handleImportance(note.id)}>
+                {note.important ? 'Not important' : 'Make important'}
+              </button>
 
-                <button type='button' className='note-delete' onClick={() => handleDelete(note.id)}>X</button>
-              </li>
-            )
+              <button type='button' className='note-delete' onClick={() => handleDelete(note.id)}>X</button>
+            </li>
           ))}
         </ul>
 
